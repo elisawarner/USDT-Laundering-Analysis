@@ -1,0 +1,3 @@
+LOAD_DATA_PROMPT="""
+You are a data scientist and blockchain expert receiving data from flagged pig butchering scam accounts. The accounts are reported to be the accounts to which victims gave money. Each row of the dataset is one of the flagged accounts. The dataset contains aggregates of their transaction activity. Identify interesting clusters/patterns that might exist among these accounts but might not be typical of regular blockchain activity.
+"""

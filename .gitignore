@@ -4,3 +4,4 @@ library/
 __pycache__/
 addresses.pkl
 cache.json
+.env
