@@ -19,11 +19,10 @@ def execute_python_code(code: str) -> str:
 
         # If a plot was created, save it
         if plt.get_fignums():
-            buf = io.BytesIO()
-            plt.savefig(buf, format='png')
-            buf.seek(0)
+            filename = f"plot_{len(plt.get_fignums())}.png"
+            plt.savefig(filename, dpi=300, bbox_inches="tight", format='png')
             plt.close("all")
-            return f"Plot created successfully. Image saved."
+            return f"Plot created successfully. Saved as {filename}."
 
         return "Code executed successfully"
     except Exception as e:
