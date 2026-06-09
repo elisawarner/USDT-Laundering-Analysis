@@ -1,4 +1,6 @@
 from langchain_core.tools import tool, InjectedToolArg
+import pandas as pd
+import matplotlib.pyplot as plt
 
 @tool
 def execute_python_code(code: str) -> str:
